@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DYOB</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link href="css/minimal/minimal.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+<div id="sidebar" class="open">
+  	<div class="logo"><img src="img/logo.png" alt=""></div>
+ 	<h6 class="nav-title">공통관리</h6>
+  	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+   		<div class="panel panel-default">
+     			<div class="panel-heading" role="tab" id="headingOne">
+     				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="glyphicon glyphicon-th-list"></span></span>기준정보 관리<span class="ico-active"></span></a> </h4>
+     				<span class="glyphicons glyphicons-show-thumbnails-with-lines"></span>
+     			</div>
+      			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+       				</div>
+      			</div>
+    		</div>
+    		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingTwo">
+      				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="glyphicon glyphicon-user"></span>OA 사용자 관리<span class="badge">+2</span><span class="ico-active"></span></a> </h4>
+     			</div>
+     			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+       				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+					</ul>
+        				</div>
+     			</div>
+    		</div>
+    		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingThree">
+      				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span class="glyphicon glyphicon-cog"></span>환경 설정<span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+       				</div>
+      			</div>
+    		</div>
+  
+ 		<h6 class="nav-title">부가관리</h6>
+  		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingFour">
+        				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><span class="glyphicon glyphicon-pushpin"></span>게시판 관리<span class="badge">+2</span><span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+        				</div>
+      			</div>
+    		</div>
+    		<div class="panel panel-default">
+     			<div class="panel-heading" role="tab" id="headingFive">
+        				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><span class="glyphicon glyphicon-pushpin"></span>분석/통계<span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+        				</div>
+     			 </div>
+    		</div>
+  	</div> <!-- panel-group end  -->
+</div> <!-- sidebar end -->
+<div class="top open clearfix">
+	<ul class="nav navbar-nav tool-img">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle sidebar-control active">
+				<img src="img/sidebaropen.png" alt="">
+			</a>
+		</li>
+		<li class="dropdown">
+			<a href="main.html" class="dropdown-toggle home-back">
+				<img src="img/home.png" alt="">
+			</a>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/ico_alert.png" alt=""><span class="badge">11</span></a>
+			<ul class="dropdown-menu alert" role="menu">
+				<li class="dropdown-header"><b>최근 상태 정보</b><a href="#" class="allread">다 읽음</a></li>
+				<div class="mCustomScrollbar scroll" style="overflow: visible; width:100%; height:auto; max-height:350px; ">
+				<div class="list-area" >
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list01.png" data-src="img/list01.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">10분전</span>
+								<span class="location">기준 정보 관리 > 메뉴 관리</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list02.png" data-src="img/list02.png" alt="...">
+						 	</a>
+						 	 <div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">10시간전</span>
+								<span class="location">OA 사용자 관리 > 신청 승인/거절</span>
+								가(이) 업데이트 되었습니다.
+						 	 </div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list01.png" data-src="img/list01.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">홍길동</h4>
+								<span class="time">23시간전</span>
+								<span class="location">기준 정보 관리 > 공통 코드 관리</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.15</span>
+								<span class="location">환경 설정 > 일반 설정</span>
+								가(이) 업데이트 되었습니다.
+						 	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+				</div>	
+				</div>
+				<li class="text-center dropdown-header"><a href="#">모두 보기</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle userinfo" data-toggle="dropdown">
+				<img src="img/user_img.png" alt="" class="user-img">슈퍼맨<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li class="admin_info">
+					최근 접속 정보<br/>
+					2016.12.25 23:32:98
+				</li>
+				<li class="admin_info">Version 정보 : 1.0</li>
+				<li>
+					<ul>
+						<li><a href="#">프로필 수정</a></li>
+						<li><a href="#">ON-Site 이동</a></li>
+						<li><a href="#">로그아웃</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div id="content" class="clearfix open">	
+	<div class="content-inner">
+	  	<div class="page-header">
+		  <h4>구성원 관리
+		  	<small>
+		  		<ol class="breadcrumb">
+				  <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				  <li><a href="#">사용자 관리</a></li>
+				  <li class="active">구성원 관리</li>
+				</ol>
+		  	</small>
+		  </h4>
+		</div>
+		
+		<div class="table-area table-responsive clearfix">
+			<div class="tree-area left">
+				<div class="tree-top clearfix">
+					<span>그룹</span>
+					<a href="#" class="btn-setting"><img src="img/btn_setting.png" alt=""></a>
+				</div>
+				<div class="tree well mCustomScrollbar scroll-side"
+ style="width:auto; height:auto; max-width:218px; overflow-x:auto;">
+					<ul>
+						<li>
+							<span class="depth01 active"><i><img src="img/bg_tree.png" alt=""></i>BA SoftTech<label>40</label></span> 
+							<ul>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>10</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>7</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>15</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>0</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>18</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-area">
+				<form class="navbar-form clearfix" role="search">
+					<span class="title-span">구성원</span>	
+				  	<div class="form-group">
+					  <input type="text" class="form-control search-input" placeholder="검색">
+					</div>
+				</form>
+				<div class="right-bottom">
+					<div class="table-control clearfix">
+						<div class="left">
+							<button type="button" class="btn btn-warning">삭제</button>
+							<button type="button" class="btn btn-warning">그룹이동</button>
+							<span class="dep-name">
+								Management Team <label>15</label>명
+							</span>
+						</div>
+						<button type="button" class="btn btn-brown right btn-add">추가</button>
+					</div>
+					<table class="table table-sub">
+						<tr>
+							<th><input type="checkbox" id="checkall"></th>
+							<th>사진</th>
+							<th class="sort">이름<span class="ico-sort"></span></th>
+							<th class="sort">아이디<span class="ico-sort"></span></th>
+							<th class="sort">조직<span class="ico-sort"></span></th>
+							<th class="sort">직급<span class="ico-sort"></span></th>
+							<th>담당업무</th>
+							<th class="sort">상태<span class="ico-sort"></span></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">사용중</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">사용중</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">일시정지</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">퇴사 진행중</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">퇴사</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check1"></td>
+							<td valign="middle"><img src="img/user_img.png" alt=""></td>
+							<td><a href="javascript:void(0);" class="name-pop">홍길동</a></td>
+							<td>dkiwyr_123</td>
+							<td valign="middle">Management Team</td>
+							<td>부장</td>
+							<td>영업</td>
+							<td valign="middle">퇴사</td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</div> <!-- table area end -->
+	</div> <!-- content-inner end-->
+</div> <!-- content end -->
+<footer class="active">
+	<p class="left">© 2016 <span>BA SoftTech</span></p>
+	<p class="right">Version 1.0 </p>
+</footer>
+
+<div class="popup edit">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<h1>구성원 정보</h1>
+			<div class="popup-content clearfix">
+				<div class="left">
+					<h6>개인 정보</h6>
+					<div class="btn-area">
+						<button type="button" class="btn btn-white" style="margin-bottom: 4px;">일시정지</button>
+						<button type="button" class="btn btn-white btn-user-delete">계정삭제</button>
+					</div>
+				</div>
+				<div class="right">
+					<table class="table-display">
+						<colgroup>
+							<col width="112px" />
+							<col />
+						</colgroup>
+						<tr>
+							<th><img src="img/user_img_lg.png" alt=""></th>
+							<td>
+								<div><h4 class="user-name">홍길동</h4> (<span class="other-name">别名</span>)</div>
+								<p>Management Team / <span>과장</span></p>
+							</td>
+						</tr>
+						<tr>
+							<th>소속 회사 </th>
+							<td>BA SoftTech</td>
+						</tr>
+						<tr>
+							<th>아이디</th>
+							<td>admin</td>
+						</tr>
+						<tr>
+							<th>사원번호</th>
+							<td class="user-num">BAOA00021</td>
+						</tr>
+						<tr>
+							<th>전화번호</th>
+							<td class="user-tel">010 87651234</td>
+						</tr>
+						<tr>
+							<th>휴대폰</th>
+							<td class="user-phone">+86 13811337788</td>
+						</tr>
+						<tr>
+							<th>부서/직책</th>
+							<td>Management Team / 사원</td>
+						</tr>
+						<tr>
+							<th>담당 업무 </th>
+							<td class="user-business">인사</td>
+						</tr>
+						<tr>
+							<th>근무처</th>
+							<td class="user-addr">북경 본사</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td class="user-email">12221233@qq.com</td>
+						</tr>
+						<tr>
+							<th>메신저/SNS</th>
+							<td class="user-sns">12221233 (QQ), worldspace(Wechat)</td>
+						</tr>
+						<tr>
+							<th>생일</th>
+							<td class="user-birthday">1999.09.01</td>
+						</tr>
+						<tr>
+							<th>입사일</th>
+							<td>2017.01.01</td>
+						</tr>
+					</table>
+					<table class="table-edit">
+						<colgroup>
+							<col width="112px" />
+							<col />
+						</colgroup>
+						<tr>
+							<th style="position: relative;">
+								<form id="myForm" method="post">
+									<div class="upload">
+										  <input type="file" accept="image/*;capture=camera" id="files" name="files" multiple>
+									</div>
+									<span id="selectedFiles">
+										<div class="form-fileimage">
+											<img src="img/user_img_lg.png" data-file="list01.png" class="selFile">
+										</div>
+									</span>
+							  </form>
+							</th>
+							<td>
+								<h4><input type="text" name="user-name"></h4>
+								<p>
+									<input type="text" name="other-name">
+									<div class="select-area hasbar">
+										<select class="selectpicker">
+										  <option>사원</option>
+										  <option>대리</option>
+										  <option>과장</option>
+										  <option>차장</option>
+										</select>
+									</div>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>소속 회사 </th>
+							<td>BA SoftTech</td>
+						</tr>
+						<tr>
+							<th>아이디</th>
+							<td>admin</td>
+						</tr>
+						<tr>
+							<th>사원번호</th>
+							<td><input type="text" name="user-num"></td>
+						</tr>
+						<tr>
+							<th>전화번호</th>
+							<td><input type="text" name="user-tel"></td>
+						</tr>
+						<tr>
+							<th>휴대폰</th>
+							<td><input type="text" name="user-phone"></td>
+						</tr>
+						<tr>
+							<th>부서/직책</th>
+							<td>
+								<img src="img/bg_tree.png" alt="" style="margin:7px 7px 0 0; float:left;">
+								<div class="input-group dep-search">
+								  <input type="password" class="form-control" id="InputPassword" data-bv-field="password" readonly><i class="form-control-feedback" data-bv-icon-for="password" style="display: none;"></i>
+								  <span class="input-group-addon"><span class="caret"></span></span>
+								</div>
+								<div class="select-area hasbar" style="margin:7px 0 0 27px;">
+									<select class="selectpicker">
+									  <option>조직장</option>
+									  <option>대리</option>
+									  <option>과장</option>
+									  <option>차장</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>담당 업무 </th>
+							<td><input type="text" name="user-business"></td>
+						</tr>
+						<tr>
+							<th>근무처</th>
+							<td><input type="text" name="user-addr"></td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td><input type="text" name="user-email"></td>
+						</tr>
+						<tr>
+							<th>메신저/SNS</th>
+							<td><input type="text" name="user-sns"></td>
+						</tr>
+						<tr>
+							<th>생일</th>
+							<td>
+								<div class="form-group">
+									<div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										<input class="form-control input-date" size="16" type="text" value="" readonly name="user-birthday">
+										<span class="input-group-addon glyphicon-date"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									<input type="hidden" id="dtp_input2" value="" /><br/>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-brown btn-edit display-button">수정</button>
+				<button type="button" class="btn btn-warning btn-clo display-button">완료</button>
+				<button type="button" class="btn btn-brown btn-edit edit-button">저장</button>
+				<button type="button" class="btn btn-warning btn-cancel edit-button">취소</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>
+
+<div class="popup add">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<h1>구성원 추가</h1>
+			<div class="popup-content clearfix">
+				<div class="left">
+					<h6>개인 정보</h6>
+					<div class="btn-area">
+						<button type="button" class="btn btn-white" style="margin-bottom: 4px;">일시정지</button>
+						<button type="button" class="btn btn-white btn-user-delete">계정삭제</button>
+					</div>
+				</div>
+				<div class="right">
+					<table class="table-edit adduser">
+						<colgroup>
+							<col width="112px" />
+							<col />
+						</colgroup>
+						<tr>
+							<th style="position: relative;">
+								<form id="myForm" method="post">
+									<div class="upload">
+										  <input type="file" accept="image/*;capture=camera" id="files" name="files" multiple>
+									</div>
+									<span id="selectedFiles">
+										<div class="form-fileimage">
+											<img src="img/user_img_lg_default.png" data-file="list01.png" class="selFile">
+										</div>
+									</span>
+							  </form>
+							</th>
+							<td>
+								<h4><input type="text"></h4>
+								<p>
+									<input type="text">
+									<div class="select-area hasbar">
+										<select class="selectpicker">
+										  <option>사원</option>
+										  <option>대리</option>
+										  <option>과장</option>
+										  <option>차장</option>
+										</select>
+									</div>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>소속 회사 </th>
+							<td>BA SoftTech</td>
+						</tr>
+						<tr>
+							<th>아이디</th>
+							<td><input type="text" name="user-id"></td>
+						</tr>
+						<tr>
+							<th valign="top">비밀번호</th>
+							<td>
+								<div>
+									<input tabindex="3" type="radio" id="input-3" name="demo-radio" checked>
+									<label for="input-3">관리자 직접입력 </label>
+									<input tabindex="4" type="radio" id="input-4" name="demo-radio">
+									<label for="input-4">이메일 발송</label>
+								</div>
+								<input type="text" name="user-pwd" placeholder="비밀번호 입력" style="width:232px;">
+								<input type="text" name="user-pwd" placeholder="비밀번호 확인" style="width:232px;">
+						</td>
+						</tr>
+						<tr>
+							<th>사원번호</th>
+							<td><input type="text" name="user-num" placeholder="사원번호"></td>
+						</tr>
+						<tr>
+							<th>전화번호</th>
+							<td><input type="text" name="user-tel" placeholder="전화번호"></td>
+						</tr>
+						<tr>
+							<th>휴대폰</th>
+							<td><input type="text" name="user-phone" placeholder="휴대폰 번호"></td>
+						</tr>
+						<tr>
+							<th valign="top">부서/직책</th>
+							<td>
+								<img src="img/bg_tree.png" alt="" style="margin:7px 7px 0 0; float:left;">
+								<div class="input-group dep-search">
+								  <input type="password" class="form-control" id="InputPassword" data-bv-field="password" readonly><i class="form-control-feedback" data-bv-icon-for="password" style="display: none;"></i>
+								  <span class="input-group-addon"><span class="caret"></span></span>
+								</div>
+								<div class="select-area hasbar" style="margin:7px 0 0 27px;">
+									<select class="selectpicker">
+									  <option>조직장</option>
+									  <option>대리</option>
+									  <option>과장</option>
+									  <option>차장</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>담당 업무 </th>
+							<td><input type="text" name="user-business" placeholder="담당업무"></td>
+						</tr>
+						<tr>
+							<th>근무처</th>
+							<td><input type="text" name="user-addr" placeholder="근무하는 장소"></td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td><input type="text" name="user-email" placeholder="개인 이메일"></td>
+						</tr>
+						<tr>
+							<th>메신저/SNS</th>
+							<td><input type="text" name="user-sns" placeholder="예) 위챗, 큐큐 등"></td>
+						</tr>
+						<tr>
+							<th>생일</th>
+							<td>
+								<div class="form-group">
+									<div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										<input class="form-control input-date" size="16" type="text" value="" placeholder="yyyy.mm.dd" readonly>
+										<span class="input-group-addon glyphicon-date"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									<input type="hidden" id="dtp_input2" value="" /><br/>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-brown btn-edit">추가</button>
+				<button type="button" class="btn btn-warning btn-cancel">취소</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>
+
+<div class="popup default">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<div class="popup-content clearfix">
+				<p>취소 시 변경된 내용이 반영되지 않습니다. <br/>취소 하시겠습니까?</p>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-white">예</button>
+				<button type="button" class="btn btn-white btn-clo-def">아니요</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>
+
+<div class="popup department">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<h1>조직 설정</h1>
+			<div class="popup-content clearfix">
+				<div class="tree well" style="height: 229px;width:100%;">
+					<ul class="mCustomScrollbar scroll-dep"
+ style="overflow: visible; width: 100%; height: auto; max-height: 207px;">
+						<li>
+							<span class="depth01 active"><i><img src="img/bg_tree.png" alt=""></i>BA SoftTech<label>40</label></span> 
+							<ul>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>10</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>7</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>15</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>0</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="depth02"><i><img src="img/bg_tree.png" alt=""></i>Management Team<label>18</label></span> 
+									<ul>
+										<li>
+											<span class="depth03"><i><img src="img/bg_tree.png" alt=""></i>Management Team</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-white">예</button>
+				<button type="button" class="btn btn-white btn-clo-def">아니요</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>	
+
+<div class="popup delete">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<h1>구성원 삭제</h1>
+			<div class="popup-content clearfix">
+				<p>
+					3명의 구성원을 삭제(퇴사처리) 하시겠습니까?<br>
+					구성원 삭제 시 해당 구성원의 모든 서비스 및 데이터가 삭제 처리 됩니다.
+				</p>
+				<ul>
+					<li>- 데이터를 백업 하신후 삭제 하시는건지 확인해 주세요.</li>
+					<li>- 삭제후 7일간 복직 처리가 되지 않으면 일괄 삭제됩니다.</li>
+				</ul>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-white">퇴사</button>
+				<button type="button" class="btn btn btn-warning">취소</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>		
+	
+<!-- 字体文件 -->	
+<script>
+function lazyload() {
+     var sRule1 =
+         "@font-face {" +
+         "  font-family: 'NanumGothic';" +
+         "  src: url('../fonts/NanumGothic.eot');" +
+         "  src: local('나눔 고딕'), " +
+                 "url('../fonts/NanumGothic.woff') " +
+                 "format('woff');" +
+         "}";
+ 
+     var style1 = document.styleSheets[0];
+     if ( "function" === typeof(style1.insertRule) ) {
+         // Firefox, Safari, Chrome
+         style1.insertRule(sRule1, 0);
+     }
+     else if ( "string" === typeof(style1.cssText) ) {
+         // IE
+         style1.cssText = sRule1;
+     }
+ }
+</script>	
+	
+
+		
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+<!-- jquery scroll bar -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/icheck.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.ko.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/popup.js" charset="UTF-8"></script>
+
+<!-- insert image -->
+<script>
+      var selDiv = "";
+      var storedFiles = [];
+            
+      $(document).ready(function() {
+            $("#files").on("change", handleFileSelect);
+            selDiv = $(".form-fileimage"); 
+            $("#myForm").on("submit", handleForm);
+      });
+                
+      function handleFileSelect(e) {
+            var files = e.target.files;
+            var filesArr = Array.prototype.slice.call(files);
+            filesArr.forEach(function(f) {          
+                  if(!f.type.match("image.*")) {
+                        return;
+                  }
+                  storedFiles.push(f);
+                    
+                  var reader = new FileReader();
+                  reader.onload = function (e) {
+                        var src= $(this).attr('src');
+                        var html = "<img src=\"" + e.target.result + "\" data-file='"+f.name+"' class='selFile' >";
+                        selDiv.html(html);
+                  }
+                  reader.readAsDataURL(f); 
+            });
+      }
+                
+      function handleForm(e) {
+            e.preventDefault();
+            var data = new FormData();
+                
+            for(var i=0, len=storedFiles.length; i<len; i++) {
+                  data.append('files', storedFiles[i]); 
+            }
+      }
+</script>
+
+<!--Datepicker-->
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        format: 'yyyy.mm.dd',
+		language:  'ko',
+        weekStart: 1,
+        todayBtn:  0,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0,
+		pickerPosition:'top-left'
+    });
+</script>
+<script>
+/* Tree */
+$(function () {
+  $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+  $('.tree li.parent_li span').on('click', function (e) {
+    var children = $(this).parent('li').find(' > ul > li');
+    if (children.is(":visible")) {
+      children.slideUp('fast');
+      $(this).removeClass("active");
+    } else {
+      children.slideDown('fast');
+      $(this).addClass('active');
+    }
+    e.stopPropagation();
+  });
+	$(".depth03").click(function(){
+		$(".depth03").removeClass("active");
+		$(this).toggleClass('active');
+		$(".depth02").removeClass("active");
+		$(this).parent().parent().prev(".depth02").toggleClass('active');
+	});
+	$(".depth02").click(function(){
+		$(".depth02").removeClass("active");
+		$(this).parent().siblings().children().children().children(".depth03").removeClass("active");
+		$(this).toggleClass('active');
+	});
+});	
+
+$(document).ready(function(){	
+	/* 排序 */
+	$("#content th.sort").click(function(){
+		if($(this).hasClass("sort") && !$(this).hasClass("up") && !$(this).hasClass("down")){
+			$(this).siblings().removeClass("up").removeClass("down");
+			$(this).addClass("up");
+		}
+		else if($(this).hasClass("up")){
+			$(this).siblings().removeClass("up");
+			$(this).removeClass("up").removeClass("down");
+			$(this).addClass("down");
+		}
+		else if($(this).hasClass("down")){
+			$(this).siblings().removeClass("down");
+			$(this).removeClass("up").removeClass("down");
+			$(this).addClass("up");
+		}
+	});
+	
+	/* iCheck */
+	$('input[type=checkbox],input[type=radio]').iCheck({
+		checkboxClass: 'icheckbox_minimal',
+		radioClass: 'iradio_minimal',
+		increaseArea: '20%' // optional
+	  });
+	
+	/* 全选 */
+	var checkAll = $('#checkall');
+	var checkboxes = $('input[name=check1]');
+	checkAll.on('ifChecked ifUnchecked', function(event) {
+		if (event.type == 'ifChecked') {
+			checkboxes.iCheck('check');
+		} else {
+			checkboxes.iCheck('uncheck');
+		}
+	});
+	checkboxes.on('ifChanged', function(event){
+		if(checkboxes.filter(':checked').length == checkboxes.length) {
+			checkAll.prop('checked', 'checked');
+		} else {
+			checkAll.removeProp('checked');
+		}
+		checkAll.iCheck('update');
+	});
+	
+	/* Checkbox */
+	$("input[name=check1]").on('ifChecked', function(event){
+		$(this).parents("tr").addClass("active");
+		var countTd = 0;
+		$("table.table-sub tr").each(function(){
+			if($(this).hasClass("active")){
+				countTd++;
+			}
+		});
+		if(countTd == 0){
+			$(".btn-warning").removeClass("btn-brown");
+		}
+		else{
+			$(".btn-warning").addClass("btn-brown");
+		}
+	});
+	$("input[name=check1]").on('ifUnchecked', function(event){
+		$(this).parents("tr").removeClass("active");
+		var countTd = 0;
+		$("table.table-sub tr").each(function(){
+			if($(this).hasClass("active")){
+				countTd++;
+			}
+		});
+		if(countTd == 0){
+			$(".btn-warning").removeClass("btn-brown");
+		}
+		else{
+			$(".btn-warning").addClass("btn-brown");
+		}
+	});
+	
+	/* edit */
+	$(".edit-button").hide();
+	$(".btn-edit").click(function(){
+		$(".table-display").hide();
+		$(".table-edit").show();
+		$(".display-button").hide();
+		$(".edit-button").show();
+	});
+	
+	/* edit table */
+	var inputValue;
+	var name;
+	$(".table-edit input[type=text]").each(function(){
+		//alert(1);
+		var attr = $(this).attr('name');
+		if(typeof attr !== typeof undefined && attr !== false){
+			name = $(this).attr("name");
+			inputValue = $("."+name).html();
+			$(this).val(inputValue);
+		}
+		//alert($("table.table-display td."+name).html());
+	});
+	
+	/* scroll */
+	 $(".scroll").mCustomScrollbar();
+	 $("#content .scroll-side").mCustomScrollbar({
+		 axis:"x",
+		 autoExpandScrollbar:true,
+		 advanced:{autoExpandHorizontalScroll:true}
+	 });
+	 $(".scroll-dep").mCustomScrollbar();
+	lazyload();
+});
+	
+
+</script> 
+<script>$('ul li ul li ul:not(:first) li').hide()</script>
+</body>
+</html>
+

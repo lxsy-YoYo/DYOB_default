@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DYOB</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrapValidator.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/jquery.nestable.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="sidebar" class="open">
+  	<div class="logo"><img src="img/logo.png" alt=""></div>
+ 	<h6 class="nav-title">공통관리</h6>
+  	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+   		<div class="panel panel-default">
+     			<div class="panel-heading" role="tab" id="headingOne">
+     				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="glyphicon glyphicon-th-list"></span></span>기준정보 관리<span class="ico-active"></span></a> </h4>
+     				<span class="glyphicons glyphicons-show-thumbnails-with-lines"></span>
+     			</div>
+      			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+       				</div>
+      			</div>
+    		</div>
+    		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingTwo">
+      				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="glyphicon glyphicon-user"></span>OA 사용자 관리<span class="badge">+2</span><span class="ico-active"></span></a> </h4>
+     			</div>
+     			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+       				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+					</ul>
+        				</div>
+     			</div>
+    		</div>
+    		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingThree">
+      				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span class="glyphicon glyphicon-cog"></span>환경 설정<span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+       				</div>
+      			</div>
+    		</div>
+  
+ 		<h6 class="nav-title">부가관리</h6>
+  		<div class="panel panel-default">
+      			<div class="panel-heading" role="tab" id="headingFour">
+        				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><span class="glyphicon glyphicon-pushpin"></span>게시판 관리<span class="badge">+2</span><span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+        				</div>
+      			</div>
+    		</div>
+    		<div class="panel panel-default">
+     			<div class="panel-heading" role="tab" id="headingFive">
+        				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><span class="glyphicon glyphicon-pushpin"></span>분석/통계<span class="ico-active"></span></a> </h4>
+      			</div>
+      			<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        				<div class="panel-body"> 
+        					<ul style="display: block;">
+						<li><a href="form-common.html">신청 승인/거절</a></li>
+						<li><a href="form-validation.html">구성원 관리</a></li>
+						<li><a href="form-wizard.html">그룹 관리</a></li>
+						<li><a href="form-wizard.html">권한 관리</a></li>
+			  		</ul>
+        				</div>
+     			 </div>
+    		</div>
+  	</div> <!-- panel-group end  -->
+</div> <!-- sidebar end -->
+<div class="top open clearfix">
+	<ul class="nav navbar-nav tool-img">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle sidebar-control active">
+				<img src="img/sidebaropen.png" alt="">
+			</a>
+		</li>
+		<li class="dropdown">
+			<a href="main.html" class="dropdown-toggle home-back">
+				<img src="img/home.png" alt="">
+			</a>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/ico_alert.png" alt=""><span class="badge">11</span></a>
+			<ul class="dropdown-menu alert" role="menu">
+				<li class="dropdown-header"><b>최근 상태 정보</b><a href="#" class="allread">다 읽음</a></li>
+				<div class="mCustomScrollbar scroll" style="overflow: visible; width:100%; height:auto; max-height:350px; ">
+				<div class="list-area" >
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list01.png" data-src="img/list01.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">10분전</span>
+								<span class="location">기준 정보 관리 > 메뉴 관리</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list02.png" data-src="img/list02.png" alt="...">
+						 	</a>
+						 	 <div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">10시간전</span>
+								<span class="location">OA 사용자 관리 > 신청 승인/거절</span>
+								가(이) 업데이트 되었습니다.
+						 	 </div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list01.png" data-src="img/list01.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">홍길동</h4>
+								<span class="time">23시간전</span>
+								<span class="location">기준 정보 관리 > 공통 코드 관리</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.15</span>
+								<span class="location">환경 설정 > 일반 설정</span>
+								가(이) 업데이트 되었습니다.
+						 	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+						  	<a class="media-left media-middle" href="#">
+								<img src="img/list03.png" data-src="img/list03.png" alt="...">
+						  	</a>
+						  	<div class="media-body">
+								<h4 class="media-heading">슈퍼맨</h4>
+								<span class="time">2016.05.09</span>
+								<span class="location">환경 설정 > 이메일 설정</span>
+								가(이) 업데이트 되었습니다.
+						  	</div>
+						</div>
+					</li>
+				</div>	
+				</div>
+				<li class="text-center dropdown-header"><a href="#">모두 보기</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle userinfo" data-toggle="dropdown">
+				<img src="img/user_img.png" alt="" class="user-img">슈퍼맨<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li class="admin_info">
+					최근 접속 정보<br/>
+					2016.12.25 23:32:98
+				</li>
+				<li class="admin_info">Version 정보 : 1.0</li>
+				<li>
+					<ul>
+						<li><a href="#">프로필 수정</a></li>
+						<li><a href="#">ON-Site 이동</a></li>
+						<li><a href="#">로그아웃</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div id="content" class="clearfix open">
+	<div class="content-inner">
+	  	<div class="page-header">
+		  <h4>그룹 관리
+		  	<small>
+		  		<ol class="breadcrumb">
+				  <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				  <li><a href="#">사용자 관리</a></li>
+				  <li class="active">그룹 관리</li>
+				</ol>
+		  	</small>
+		  </h4>
+		</div>
+		<form class="navbar-form clearfix drag" role="search">
+		  <div class="left">
+		  	<p>BA SoftTech<label class="line"></label>총 구성원 : <span>40,</span> 총 그룹수 : <span>7</span></p>
+		  </div>	
+		  <div class="form-group">
+			  <button type="button" class="btn btn-brown btn-addgroup">그룹추가</button>
+			</div>
+		</form>
+		<div class="top-text">각 그룹(조직) 오브젝트를 원하는 순서대로 마우스 Drag&Drop 해주세요. 추가 설정 옵션은 오브젝트 오른쪽 화살표를 클릭하세요.</div>
+		<div class="table-area table-responsive">
+			<div class="cf nestable-lists">
+				<div class="dd" id="nestable3">
+					<ol class="dd-list">
+						<li class="dd-item dd3-item" data-id="1">
+							<div class="dd-handle dd3-handle">Drag</div>
+							<div class="dd3-content">
+								<b>Management Team</b>구성원: <span>10</span>
+								<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+								<div class="expand-area">
+									<h6>그룹이름</h6>
+									<input type="text">
+									<button type="button" class="btn btn-white btn-delete">삭제</button>
+									<button type="button" class="btn btn-warning">취소</button>
+								</div>
+							</div>
+						</li>
+						<li class="dd-item dd3-item" data-id="2">
+							<div class="dd-handle dd3-handle">Drag</div>
+							<div class="dd3-content">
+								<b>Management Team</b>구성원: <span>10</span>
+								<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+								<div class="expand-area">
+									<h6>그룹이름</h6>
+									<input type="text">
+									<button type="button" class="btn btn-white btn-delete">삭제</button>
+									<button type="button" class="btn btn-warning">취소</button>
+								</div>
+							</div>
+							<ol class="dd-list">
+								<li class="dd-item dd3-item" data-id="3">
+									<div class="dd-handle dd3-handle">Drag</div>
+									<div class="dd3-content">
+										<b>Account Part</b>구성원: <span>2</span>
+										<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+										<div class="expand-area">
+											<h6>그룹이름</h6>
+											<input type="text">
+											<button type="button" class="btn btn-white btn-delete">삭제</button>
+											<button type="button" class="btn btn-warning">취소</button>
+										</div>
+									</div>
+								</li>
+								<li class="dd-item dd3-item" data-id="4">
+									<div class="dd-handle dd3-handle">Drag</div>
+									<div class="dd3-content">
+										<b>Purchase Part</b>구성원: <span>8</span>
+										<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+										<div class="expand-area">
+											<h6>그룹이름</h6>
+											<input type="text">
+											<button type="button" class="btn btn-white btn-delete">삭제</button>
+											<button type="button" class="btn btn-warning">취소</button>
+										</div>
+									</div>
+									<ol class="dd-list">
+										<li class="dd-item dd3-item" data-id="5">
+											<div class="dd-handle dd3-handle">Drag</div>
+											<div class="dd3-content">
+												<b>Software Room</b>구성원: <span>3</span>
+												<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+												<div class="expand-area">
+													<h6>그룹이름</h6>
+													<input type="text">
+													<button type="button" class="btn btn-white btn-delete">삭제</button>
+													<button type="button" class="btn btn-warning">취소</button>
+												</div>
+											</div>
+										</li>
+										<li class="dd-item dd3-item" data-id="6">
+											<div class="dd-handle dd3-handle">Drag</div>
+											<div class="dd3-content">
+												<b>Hardware Room</b>구성원: <span>5</span>
+												<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+												<div class="expand-area">
+													<h6>그룹이름</h6>
+													<input type="text">
+  												    <button type="button" class="btn btn-white btn-delete">삭제</button>		
+													<button type="button" class="btn btn-warning">취소</button>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li class="dd-item dd3-item" data-id="7">
+							<div class="dd-handle dd3-handle">Drag</div>
+							<div class="dd3-content">
+								<b>Service Team</b>구성원: <span>10</span>
+								<a href="javascript:void(0);" class="btn-expand right">옵션<span class="caret"></span></a>
+								<div class="expand-area">
+									<h6>그룹이름</h6>
+									<input type="text">
+									<button type="button" class="btn btn-white btn-delete">삭제</button>
+									<button type="button" class="btn btn-warning">취소</button>
+								</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn btn-brown">저장</button>
+			</div>
+		</div> <!-- table area end -->
+	</div> <!-- content-inner end-->
+</div> <!-- content end -->
+<footer class="active">
+	<p class="left">© 2016 <span>BA SoftTech</span></p>
+	<p class="right">Version 1.0 </p>
+</footer>
+<!-- 字体文件 -->	
+<script>
+function lazyload() {
+     var sRule1 =
+         "@font-face {" +
+         "  font-family: 'NanumGothic';" +
+         "  src: url('../fonts/NanumGothic.eot');" +
+         "  src: local('나눔 고딕'), " +
+                 "url('../fonts/NanumGothic.woff') " +
+                 "format('woff');" +
+         "}";
+ 
+     var style1 = document.styleSheets[0];
+     if ( "function" === typeof(style1.insertRule) ) {
+         // Firefox, Safari, Chrome
+         style1.insertRule(sRule1, 0);
+     }
+     else if ( "string" === typeof(style1.cssText) ) {
+         // IE
+         style1.cssText = sRule1;
+     }
+ }
+</script>	
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-select.min.js"></script>
+<!-- jquery scroll bar -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+/* alert delete */
+$(document).ready(function(){
+	lazyload();
+	$(".table-area").animate({right:"0", opacity:"1"},1000);
+	$(".allread").click(function(){
+		setTimeout(function(){$('.list-area li:nth-child(1)').addClass("delete")},0);
+		setTimeout(function(){$('.list-area li:nth-child(2)').addClass("delete")},50);
+		setTimeout(function(){$('.list-area li:nth-child(3)').addClass("delete")},100);
+		setTimeout(function(){$('.list-area li:nth-child(4)').addClass("delete")},150);
+		setTimeout(function(){$('.list-area li:nth-child(5)').addClass("delete")},200);
+		setTimeout(function(){$('.list-area').slideUp()},200);
+		setTimeout(function(){$('.list-area li').fadeOut()},250);
+	});
+	$(".sidebar-control").click(function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$("#sidebar").removeClass("open");
+			$(".top").removeClass("open");
+			$("#content").removeClass("open");
+			//$(this).children("img").prop("src","img/sidebarclose.png");
+			$("footer").removeClass("active");
+		}
+		else{
+			$(this).addClass("active");
+			$("#sidebar").addClass("open");
+			$(".top").addClass("open");
+			$("#content").addClass("open");
+			//$(this).children("img").prop("src","img/sidebaropen.png");
+			$("footer").addClass("active");
+		}
+	});
+	
+	$(".search-input").focus(function(){
+		$(this).prop("placeholder","");
+	});
+	$(".search-input").blur(function(){
+		$(this).prop("placeholder","검색");
+	});
+	
+	$("#content th.sort").click(function(){
+		if($(this).hasClass("sort") && !$(this).hasClass("up") && !$(this).hasClass("down")){
+			$(this).siblings().removeClass("up").removeClass("down");
+			$(this).addClass("up");
+		}
+		else if($(this).hasClass("up")){
+			$(this).siblings().removeClass("up");
+			$(this).removeClass("up").removeClass("down");
+			$(this).addClass("down");
+		}
+		else if($(this).hasClass("down")){
+			$(this).siblings().removeClass("down");
+			$(this).removeClass("up").removeClass("down");
+			$(this).addClass("up");
+		}
+	});
+	var tdCount = $(".table-striped tr").length - 1;
+	$(".table-bottom p span").html(tdCount);
+});
+/* jquery scrollbar */
+(function($){
+        $(window).on("load",function(){
+            $(".scroll").mCustomScrollbar({
+            	theme:"minimal"
+            });
+        });
+});
+</script> 
+<script src="js/jquery.nestable.js"></script>
+<script>
+
+$(document).ready(function()
+{
+
+    var updateOutput = function(e)
+    {
+        var list   = e.length ? e : $(e.target),
+            output = list.data('output');
+        if (window.JSON) {
+            output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+        } else {
+            output.val('JSON browser support required for this demo.');
+        }
+    };
+
+    $('#nestable-menu').on('click', function(e)
+    {
+        var target = $(e.target),
+            action = target.data('action');
+        if (action === 'expand-all') {
+            $('.dd').nestable('expandAll');
+        }
+        if (action === 'collapse-all') {
+            $('.dd').nestable('collapseAll');
+        }
+    });
+
+    $('#nestable3').nestable();
+	
+	
+	
+	$(".btn-addgroup").click(function(){
+		$("#nestable3>.dd-list>li").removeClass("new");
+		var html = $("#nestable3>.dd-list").html();
+		var innerHtml = '<li class="dd-item dd3-item new" data-id="1">'
+						+'	<div class="dd-handle dd3-handle">Drag</div>'
+						+'	<div class="dd3-content open">'
+						+'		<b>Management Team</b>구성원: <span>10</span>'
+						+'		<a href="javascript:void(0);" class="btn-expand right open">옵션<span class="caret"></span></a>'
+						+'		<div class="expand-area">'
+						+'			<h6>그룹이름</h6>'
+						+'			<input type="text">'
+						+'			<button type="button" class="btn btn-white btn-delete">삭제'
+						+'			</button>'
+						+'			<button type="button" class="btn btn-warning">취소'
+						+'			</button>'
+						+'		</div>'
+						+'	</div>'
+						+'</li>'
+		$("#nestable3>.dd-list").html(innerHtml + html).fadeIn();
+		
+		$(".dd3-content a").click(function(){
+			if(!$(this).hasClass("open")){
+				$(this).addClass("open");
+				$(this).parent(".dd3-content").addClass("open");
+			}
+			else{
+				$(this).removeClass("open");
+				$(this).parent(".dd3-content").removeClass("open");
+			}
+		});
+		$(".btn-delete").click(function(){
+			$(this).parent().parent().parent().fadeTo(150, 0, function(){//fade
+				$(this).slideUp(150, function() {//slide up
+				  $(this).remove();//then remove from the DOM
+				});
+			});
+		});
+	});
+	$(".dd3-content a").click(function(){
+		if(!$(this).hasClass("open")){
+			$(this).addClass("open");
+			$(this).parent(".dd3-content").addClass("open");
+		}
+		else{
+			$(this).removeClass("open");
+			$(this).parent(".dd3-content").removeClass("open");
+		}
+	});
+	$(".btn-delete").click(function(){
+		$(this).parent().parent().parent().fadeTo(150, 0, function(){//fade
+			$(this).slideUp(150, function() {//slide up
+			  $(this).remove();//then remove from the DOM
+			});
+		});
+	});
+});
+</script>
+</body>
+</html>
+
