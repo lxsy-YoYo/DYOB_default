@@ -29,14 +29,14 @@
   	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
    		<div class="panel panel-default">
      			<div class="panel-heading" role="tab" id="headingOne">
-     				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="glyphicon glyphicon-th-list"></span></span>기준정보 관리<span class="ico-active"></span></a> </h4>
+     				<h4 class="panel-title"> <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-th-list"></span></span>기준정보 관리<span class="ico-active"></span></a> </h4>
      				<span class="glyphicons glyphicons-show-thumbnails-with-lines"></span>
      			</div>
-      			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         				<div class="panel-body"> 
         					<ul style="display: block;">
 						<li><a href="DYOB0011.html">메뉴 관리</a></li>
-						<li><a href="DYOB0010.html">메타 관리</a></li>
+						<li><a href="DYOB0010.html" class="active">메타 관리</a></li>
 						<li><a href="DYOB0009.html">공통 코드 관리</a></li>
 			  		</ul>
        				</div>
@@ -59,15 +59,15 @@
     		</div>
     		<div class="panel panel-default">
       			<div class="panel-heading" role="tab" id="headingThree">
-      				<h4 class="panel-title"> <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span class="glyphicon glyphicon-cog"></span>환경 설정<span class="ico-active"></span></a> </h4>
+      				<h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-cog"></span>환경 설정<span class="ico-active"></span></a> </h4>
       			</div>
-      			<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+      			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
         				<div class="panel-body"> 
         					<ul style="display: block;">
 						<li><a href="DYOB0005.html">일반 설정</a></li>
 						<li><a href="DYOB0006.html">회사 정보 관리</a></li>
 						<li><a href="#">알림 설정</a></li>
-						<li><a href="DYOB0007.html" class="active">이메일 설정</a></li>
+						<li><a href="DYOB0007.html">이메일 설정</a></li>
 						<li><a href="DYOB0008.html">시스템 UI</a></li>
 			  		</ul>
        				</div>
@@ -308,60 +308,147 @@
 <div id="content" class="clearfix open">
 	<div class="content-inner">
 	  	<div class="page-header">
-		  <h4>이메일 설정
+		  <h4>메타 관리
 		  	<small>
 		  		<ol class="breadcrumb">
 				  <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-				  <li><a href="#">환경 설정</a></li>
-				  <li class="active">이메일 설정</li>
+				  <li><a href="#">기준 정보 관리</a></li>
+				  <li class="active">메타 관리</li>
 				</ol>
 		  	</small>
 		  </h4>
 		</div>
-		<div class="table-area table-responsive clearfix setting">
-			<div class="table-area-inner">
-				<p>이메일 설정은 사내 서버(혹은 사용하시는 클라우드 등)에 메일 서버 셋업이 완료 되어야 사용 하실 수 있습니다. 서버 관리자에 문의하세요.  </p>
-				<table class="table table-setting email">
-					<colgroup>
-						<col width="133px">
-						<col>
-					</colgroup>
-					<tr>
-						<th valign="top">POP/SMTP</th>
-						<td>
-							<input tabindex="1" type="radio" id="input-1" name="demo-radio" checked>
-							<label for="input-1">사용함</label>
-							<input tabindex="2" type="radio" id="input-2" name="demo-radio">
-							<label for="input-2">사용안함</label>
-							<input type="text" class="input-before">
-							포트<input type="text" class="input-after">
-						</td>
-					</tr>
-					<tr>
-						<th valign="top">IMAP/SMTP</th>
-						<td>
-							<input tabindex="3" type="radio" id="input-3" name="demo-radio1" checked>
-							<label for="input-3">사용함</label>
-							<input tabindex="4" type="radio" id="input-4" name="demo-radio1">
-							<label for="input-4">사용안함</label>
-							<input type="text" class="input-before">
-							포트<input type="text" class="input-after">
-						</td>
-					</tr>
-					<tr>
-						<th valign="top">방화벽 사용</th>
-						<td>
-							<input tabindex="5" type="radio" id="input-5" name="demo-radio2" checked>
-							<label for="input-5">사용함</label>
-							<input tabindex="6" type="radio" id="input-6" name="demo-radio2">
-							<label for="input-6">사용안함</label>
-						</td>
-					</tr>
-				</table>
+		<form class="navbar-form clearfix" role="search">
+			<button type="button" class="btn btn-warning">삭제</button>
+		  	<div class="form-group">
+			  	<button type="button" class="btn btn-white btn-useradd">추가</button>
+				
 			</div>
-			<div class="btn-area">
-				<button type="button" class="btn btn-brown">저장</button>
-			</div>
+		</form>
+		<div class="table-area table-responsive clearfix">
+			<table class="table table-striped">
+			<tr>
+			  	<th><input type="checkbox" id="checkall"></th>
+			  	<th class="sort">meta코드<span class="ico-sort"></span></th>
+			  	<th class="sort">meta유형<span class="ico-sort"></span></th>
+			  	<th class="sort">meta언어구분<span class="ico-sort"></span></th>
+			  	<th class="sort">meta설명<span class="ico-sort"></span></th>
+			  	<th></th>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td valign="middle">홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			<tr>
+			  	<td><input type="checkbox" name="check1"></td>
+			  	<td>2017.02.15 09:05</td>
+			  	<td>홍길동</td>
+			  	<td>honggil123</td>
+			  	<td>honggil123</td>
+			  	<td>
+			  		<button type="button" class="btn btn-success">수정</button>
+			  		<button type="button" class="btn btn-warning">삭제</button>
+			  	</td>
+			</tr>
+			</table>
+		<div class="table-bottom">
+		  	<div class="select-area">
+		  		<select class="selectpicker">
+				  <option>10</option>
+				  <option>25</option>
+				  <option>50</option>
+				  <option>100</option>
+				</select>
+				 개씩 보기
+		  	</div>
+			<nav>
+				<ul class="pagination">
+					<li><a href="#">처음</a></li>
+					<li><a href="#"><</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">></a></li>
+					<li><a href="#">끝</a></li>
+				</ul>
+			</nav>
+			<p><span>1</span>/6 페이지 (총 52개) </p>
+		</div>
 		</div> <!-- table area end -->
 	</div> <!-- content-inner end-->
 </div> <!-- content end -->
@@ -369,6 +456,92 @@
 	<p class="left">© 2016 <span>BA SoftTech</span></p>
 	<p class="right">Version 1.0 </p>
 </footer>
+<div class="popup department user">
+	<div class="popup-wrap">
+		<div class="popup-inner">
+			<a href="javascript:void(0);" class="btn-close"><img src="img/btn_close.png" alt=""></a>
+			<h1>코드 추가</h1>
+			<div class="popup-content clearfix">
+				<table class="table-code">
+					<colgroup>
+						<col width="70px">
+						<col>
+						<col width="96px">
+						<col>
+					</colgroup>
+					<tr>
+						<th>분류코드</th>
+						<td style="padding-right: 20px;"><input type="text"></td>
+						<th>코드</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>표시언어</th>
+						<td style="padding-right: 20px;"><input type="text"></td>
+						<th>분류코드명</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>코드명</th>
+						<td style="padding-right: 20px;"><input type="text"></td>
+						<th>코드표시 순서</th>
+						<td>
+							<div class="number input-group">
+								<input type="text" id="num" class="num form-control" value="1" />
+								<div class="input-group-addon">
+									<button id="add" class="add">
+										<span class="caret"></span>
+									</button>
+									<button id="jian" class="jian">
+										<span class="caret"></span>
+									</button>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>사용여부</th>
+						<td colspan="3">
+							<input tabindex="1" type="radio" id="input-1" name="demo-radio" checked>
+							<label for="input-1">사용함</label>
+							<input tabindex="2" type="radio" id="input-2" name="demo-radio">
+							<label for="input-2">사용 안함</label>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="popup-bottom">
+				<button type="button" class="btn btn-brown">저장</button>
+				<button type="button" class="btn btn-warning btn-clo-def">취소</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-layout"></div>
+</div>
+<!-- 字体文件 -->	
+<script>
+function lazyload() {
+     var sRule1 =
+         "@font-face {" +
+         "  font-family: 'NanumGothic';" +
+         "  src: url('../fonts/NanumGothic.eot');" +
+         "  src: local('나눔 고딕'), " +
+                 "url('../fonts/NanumGothic.woff') " +
+                 "format('woff');" +
+         "}";
+ 
+     var style1 = document.styleSheets[0];
+     if ( "function" === typeof(style1.insertRule) ) {
+         // Firefox, Safari, Chrome
+         style1.insertRule(sRule1, 0);
+     }
+     else if ( "string" === typeof(style1.cssText) ) {
+         // IE
+         style1.cssText = sRule1;
+     }
+ }
+</script>	
 <script src="js/jquery-1.11.3.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
@@ -378,9 +551,12 @@
 <!-- jquery scroll bar -->
 <script src="js/jquery.mCustomScrollbar.js"></script>
 <script src="js/icheck.js"></script>
+<script type="text/javascript" src="js/popup.js" charset="UTF-8"></script>
+
 <script>
 /* alert delete */
 $(document).ready(function(){
+	lazyload();
 	$(".table-area").animate({right:"0", opacity:"1"},1000);
 	$(".allread").click(function(){
 		setTimeout(function(){$('.list-area li:nth-child(1)').addClass("delete")},0);
@@ -409,12 +585,7 @@ $(document).ready(function(){
 			$("footer").addClass("active");
 		}
 	});
-	/* iCheck */
-	$('input[type=checkbox],input[type=radio]').iCheck({
-		checkboxClass: 'icheckbox_minimal',
-		radioClass: 'iradio_minimal',
-		increaseArea: '20%' // optional
-	  });
+	
 	$(".search-input").focus(function(){
 		$(this).prop("placeholder","");
 	});
@@ -438,7 +609,81 @@ $(document).ready(function(){
 			$(this).addClass("up");
 		}
 	});
+	/* iCheck */
+	$('input[type=checkbox],input[type=radio]').iCheck({
+		checkboxClass: 'icheckbox_minimal',
+		radioClass: 'iradio_minimal',
+		increaseArea: '20%' // optional
+	  });
 	
+	/* 全选 */
+	var checkAll = $('#checkall');
+	var checkboxes = $('input[name=check1]');
+	checkAll.on('ifChecked ifUnchecked', function(event) {
+		if (event.type == 'ifChecked') {
+			checkboxes.iCheck('check');
+		} else {
+			checkboxes.iCheck('uncheck');
+		}
+	});
+	checkboxes.on('ifChanged', function(event){
+		if(checkboxes.filter(':checked').length == checkboxes.length) {
+			checkAll.prop('checked', 'checked');
+		} else {
+			checkAll.removeProp('checked');
+		}
+		checkAll.iCheck('update');
+	});
+	
+	/* Checkbox */
+	$("input[name=check1]").on('ifChecked', function(event){
+		$(this).parents("tr").addClass("active");
+		var countTd = 0;
+		$("table.table-striped tr").each(function(){
+			if($(this).hasClass("active")){
+				countTd++;
+			}
+		});
+		if(countTd == 0){
+			$(".navbar-form .btn-warning").removeClass("btn-brown");
+		}
+		else{
+			$(".navbar-form .btn-warning").addClass("btn-brown");
+		}
+	});
+	$("input[name=check1]").on('ifUnchecked', function(event){
+		$(this).parents("tr").removeClass("active");
+		var countTd = 0;
+		$("table.table-striped tr").each(function(){
+			if($(this).hasClass("active")){
+				countTd++;
+			}
+		});
+		if(countTd == 0){
+			$(".navbar-form .btn-warning").removeClass("btn-brown");
+		}
+		else{
+			$(".navbar-form .btn-warning").addClass("btn-brown");
+		}
+	});
+	
+	<!--数字加减-->		
+	$(".add").click(function(){
+		var n=$(this).parent().prev(".num").val();
+		var num=parseInt(n)+1;
+	    $(this).parent().prev(".num").val(num);
+	});
+
+	$(".jian").click(function(){
+		var n=$(this).parent().prev(".num").val();
+		var num=parseInt(n)-1;
+		if(num < 0){
+			$(this).parent().prev(".num").val(0);
+		}
+		else{
+			$(this).parent().prev(".num").val(num);
+		}
+	});
 });
 /* jquery scrollbar */
 (function($){
@@ -449,6 +694,8 @@ $(document).ready(function(){
         });
 });
 </script> 
+
+
 </body>
 </html>
 
