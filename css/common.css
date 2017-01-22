@@ -177,6 +177,9 @@ input[type=text]{
   display: inline-block;
   width: 100%;
 }
+#sidebar .panel-collapse a.active {
+  color: #ffffff;
+}
 #sidebar .panel-collapse a:hover {
   color: #ffffff;
 }
@@ -1695,3 +1698,55 @@ footer .right {
 	display: block;
     margin-bottom: 10px;
 }
+
+/* 공통 코드 관리 */
+.table.table-striped .glyphicon{
+	font-size: 18px;
+}
+.table.table-striped .ok-circle{
+	color:#a6652d;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background: url(../img/ico_ok.png) no-repeat center center;
+	vertical-align: middle;
+}
+.table.table-striped .ban-circle{
+	color:#959595;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background: url(../img/ico_ban.png) no-repeat center center;
+	vertical-align: middle;
+}
+.table.table-striped .btn.btn-warning:hover{
+	background:#9e9e9e!important;
+	border:1px solid #9e9e9e!important;
+}
+.popup table.table-code th{
+	padding: 0 10px;
+}
+.number .input-group-addon{ position:relative;}
+.number button{ position: absolute; left: 0; border:0; background: none; height: 5px; width: 100%; text-align: center; outline: none!important;}
+.number .add { top:5px;}
+.number .jian { bottom:5px;}
+.number .add .caret{ 
+	border-bottom: 5px solid #959595;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+	border-top: 0;
+	position: absolute;
+    top: 0;
+    left: 7px;
+}
+.number .jian .caret{ 
+	border-top: 5px solid #959595;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+	border-bottom: 0;
+	position: absolute;
+    bottom: 0;
+    left: 7px;
+}
+
+
